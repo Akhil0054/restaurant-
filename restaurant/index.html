@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>restaurant</title>
+
+  <!-- ================start nepali date picker ===================== -->
+  <link href="https://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/css/nepali.datepicker.v4.0.4.min.css" rel="stylesheet" type="text/css"/>
+  <!-- ================end nepali date picker ===================== -->
+
+
+  <!-- ============ start javascript aos link ===================== -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- ============ end javascript aos link ===================== -->
+
+
+
+  <!-- //============Start font awesome cdn links================// -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!-- //============End font awesome cdn links================// -->
+
+
+
+  <!-- bootstrapt css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrapt css link -->
+
+
+
+  <!-- start manin css link  -->
+  <link rel="stylesheet" href="assets/css/style.css" class="css">
+  <!-- end manin css link  -->
+
+</head>
+
+<body>
+
+
+
+  <!-- //=============================== Start Top Header design use html code ========================// -->
+  <div class="top-header">
+    <div class="container">
+      <div class="row text-center justify-content-between align-items-center">
+
+        <div class="col-top-header col-md-auto">
+          <a href="#" class="text-decoration-none">
+            <h3 class="top-header-text text-white lh-2"><i class="fa-solid fa-location-dot"></i> Janakpurdham, Ramanand
+              Chowk, Nepal</h3>
+          </a>
+        </div>
+
+        <div class="col-top-header col-md-auto col-md-4 mb-0 mt-md-0">
+          <a href="#" class="text-decoration-none">
+            <h3 class="top-header-text text-white lh-5"><span>Mo: 9817869031</span> <i class="fa fa-mobile"></i>
+              Hotline(+977) 9817869</h3>
+          </a>
+        </div>
+
+        <div class="col-login-btn col-md-auto mt-2">
+          <button type="button" class="btn mb-2">Login & Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- //=============================== End Top Header design use html code ========================// -->
+
+
+
+
+
+
+
+
+
+  <!-- //===================================== Start navbar design usign html and bootstrap ========================// -->
+
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="logo" src="assets/images/aklogo1.jpg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rooms</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Images Gallery</a></li>
+              <li><a class="dropdown-item" href="#">Video Gallery</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex ">
+          <button type="button" class="btn btn-btn me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@getbootstrap">See MENU & Order</button>
+          <button type="button" class="btn btn-res-table me-2" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+            data-bs-whatever="@getbootstrap">Table Reservation</button>
+
+
+          <button class="btn btn-search btn-outline-secondary my-2 my-sm-0 mr-2" type="button" id="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Search form (initially hidden) -->
+  <div class="container mt-3 d-none" id="searchFormContainer">
+    <form class="input-group" id="searchForm">
+      <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="closeSearchButton">&times;</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- //===================================== ENd navbar design usign html and bootstrap ========================// -->
+
+
+
+
+
+
+
+
+  <!-- //=========================== Start breadcrumb design using html and bootstrap =============================// -->
+  <div class="container mt-2 ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </nav>
+  </div>
+  <!-- //=========================== End breadcrumb design using html and bootstrap =============================// -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- //================= Start image slider usign bootstrap html =============== -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/slide1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/slide2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/slide3.avif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/slide4.avif" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/styleshdish2.avif" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- //================= End image slider usign bootstrap html =============== -->
+
+
+
+
+
+
+
+
+  <!-- ==================== Start about restaurant section =================== -->
+
+  <div class="container container-about mt-5" data-aos="fade-left">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-lg-6 mb-4">
+        <img src="assets/images/r6.jpg" class="img-fluid" alt="Image">
+      </div>
+      <div class="col-md-6 col-sm-12 col-lg-6 about-col-ms ">
+        <h2 class="heading-style">Akhil Restaurant </h2>
+        <p class="paragrap-text">AK Restaurant, located in the vibrant Ramanand Chowk of Janakpur Dham, offers a
+          memorable dining experience
+          with its blend of traditional Mithila decor and authentic local cuisine. Nestled near the historic Janaki
+          Mandir, this popular eatery is known for its warm hospitality, flavorful dishes, and its perfect setting
+          amidst the lively heart of the city....</p>
+        <p class="paragrap-text  mt-4"><i class="fa fa-mobile f-icons"></i> <a class="paragrap-text paragraph-hover"
+            href="tel:123-456-7890">9817869031</a></p>
+        <p class="paragrap-text "><a class="paragrap-text paragraph-hover" href="mailto:someone@example.com"><i
+              class="fa fa-envelope f-icons"></i>
+            akhily004@gmail.com</a></p>
+        <p class="paragrap-text paragraph-hover"><i class="fa-solid fa-location-dot f-icons"></i> Janakpurdham, Ramanand
+          Chowk, Nepal
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== end about restaurant section =================== -->
+
+
+
+
+
+
+  <!-- ===================== start about section ============================ -->
+  <div class="container container-about mt-5" data-aos="fade-right">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4">
+        <h2 class="heading-style">About Us</h2>
+        <p class="paragrap-text">AK Restaurant, located in the vibrant Ramanand Chowk of Janakpur Dham, offers a
+          memorable dining experience with its blend of traditional Mithila decor and authentic local cuisine. Nestled
+          near the historic Janaki Mandir, this popular eatery is known for its warm hospitality, flavorful dishes, and
+          its perfect setting amidst the lively heart of the city....</p>
+        <a href="#" class="btn btn-read ">Read More <i class="fa-solid fa-arrow-right f-icons"></i></a>
+        <div class="row mt-3">
+          <div class="col-4">
+            <img src="assets/images/styleshdish2.avif" class="img-fluid img-fluid-about" alt="Image">
+          </div>
+          <div class="col-4">
+            <img src="assets/images/d1.jfif" class="img-fluid img-fluid-about" alt="Image">
+          </div>
+          <div class="col-4">
+            <img src="assets/images/rotithal.webp" class="img-fluid img-fluid-about" alt="Image">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 about-col-ms md-mt-2 ">
+        <img src="assets/images/village-hotel-northern.jpg" class="img-fluid" alt="Image">
+      </div>
+    </div>
+  </div>
+  <!-- ===================== end about section ============================ -->
+
+
+
+
+
+
+
+  <!-- ====================== start restaurant menu card ================= -->
+
+  <div class="container my-4">
+    <div class="text-center mb-3">
+      <h1 class="heading-style">Menus</h1>
+    </div>
+    <div class="row g-4">
+      <!-- Menu Card 1 -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in-left">
+        <div class="card menu-card">
+          <img src="assets/images/r3.jpg" class="card-img-top" alt="Dish Image">
+          <div class="card-body">
+            <h5 class="card-heading">Grilled Salmon</h5>
+            <p class="paragrap-text">Crisp romaine lettuce tossed with Caesar dressing, croutons, and shaved Parmesan
+              Parmesan</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(5.0)</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">$25.99</span>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Card 2 -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in-left">
+        <div class="card menu-card">
+          <img src="assets/images/r2.jpg" class="card-img-top" alt="Dish Image">
+          <div class="card-body">
+            <h5 class="card-heading">Caesar Salad</h5>
+            <p class="paragrap-text">Crisp romaine lettuce tossed with Caesar dressing, croutons, and shaved Parmesan
+              cheese. </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(4.0)</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">$12.99</span>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu Card 3 -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in-left">
+        <div class="card menu-card">
+          <img src="assets/images/r4.jpg" class="card-img-top" alt="Dish Image">
+          <div class="card-body">
+            <h5 class="card-heading">Chocolate Cake</h5>
+            <p class="paragrap-text">Decadent chocolate cake with layers of rich chocolate ganache and topped with fresh
+              berries.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt fa-star"></i>
+                <span>(4.5)</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">$8.50</span>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hidden Menu Card 4 -->
+      <div class="col-lg-4 col-md-6 hidden-card" data-aos="zoom-in-left">
+        <div class="card menu-card">
+          <img src="assets/images/r4.jpg" class="card-img-top" alt="Dish Image">
+          <div class="card-body">
+            <h5 class="card-heading">Pasta Alfredo</h5>
+            <p class="paragrap-text">Creamy Alfredo sauce with fresh fettuccine pasta and a sprinkling of Parmesan
+              cheese. cheese
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt fa-star"></i>
+                <span>(4.5)</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">$14.99</span>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hidden Menu Card 5 -->
+      <div class="col-lg-4 col-md-6 hidden-card" data-aos="zoom-in-left">
+        <div class="card menu-card">
+          <img src="assets/images/r4.jpg" class="card-img-top" alt="Dish Image">
+          <div class="card-body">
+            <h5 class="card-heading">Margherita Pizza</h5>
+            <p class="paragrap-text">Classic Margherita pizza with fresh mozzarella, tomatoes, and basil on a crisp
+              crust.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt fa-star"></i>
+                <span>(4.5)</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">$11.99</span>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hidden Menu Card 6 -->
+      <div class="col-lg-4 col-md-6 hidden-card" data-aos="zoom-in-left">
+        <div class="card menu-card">
+          <img src="assets/images/r4.jpg" class="card-img-top" alt="Dish Image">
+          <div class="card-body">
+            <h5 class="card-heading">Tiramisu</h5>
+            <p class="paragrap-text">Traditional Italian dessert with layers of coffee-soaked ladyfingers and mascarpone
+              cheese.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt fa-star"></i>
+                <span>(4.5)</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">$9.99</span>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Show More / Less Buttons -->
+    <div class="text-center my-4">
+      <button id="show-more" class="btn btn-color">Show More</button>
+      <button id="show-less" class="btn btn-color" style="display: none;">Show Less</button>
+    </div>
+  </div>
+  <!-- ====================== end restaurant menu card ================= -->
+
+
+
+
+
+
+  <!-- =========================Start Rooms card content write html code ================  -->
+
+  <div class="container my-4">
+    <div class="text-center mb-4 mt-5">
+      <h1 class="heading-style">Rooms</h1>
+    </div>
+    <div class="row g-4">
+      <!-- Room Card 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 room-style" data-aos="zoom-in-right">
+        <div class="card room-card">
+          <img src="assets/images/ImgRoom1" class="card-img-top" alt="Room Image">
+          <div class="card-body">
+            <h5 class="card-heading">Deluxe Room</h5>
+            <p class="card-text paragrap-text">Spacious and luxurious room with a beautiful view, king-size bed, and
+              modern amenities.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item paragrap-text">King-size Bed</li>
+              <li class="list-group-item paragrap-text">En-suite Bathroom</li>
+              <li class="list-group-item paragrap-text">High-speed Wi-Fi</li>
+              <li class="list-group-item paragrap-text">Complimentary Breakfast</li>
+            </ul>
+            <a href="#" class="btn btn-color mt-3">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Room Card 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-right">
+        <div class="card room-card">
+          <img src="assets/images/ImgRoom2.jpg" class="card-img-top" alt="Room Image">
+          <div class="card-body">
+            <h5 class="card-heading">Deluxe Room</h5>
+            <p class="card-text paragrap-text">Spacious and luxurious room with a beautiful view, king-size bed, and
+              modern amenities.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item paragrap-text">King-size Bed</li>
+              <li class="list-group-item paragrap-text">En-suite Bathroom</li>
+              <li class="list-group-item paragrap-text">High-speed Wi-Fi</li>
+              <li class="list-group-item paragrap-text">Complimentary Breakfast</li>
+            </ul>
+            <a href="#" class="btn btn-color mt-3">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Room Card 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-right">
+        <div class="card room-card">
+          <img src="assets/images/ImgRoom3.jpg" class="card-img-top" alt="Room Image">
+          <div class="card-body">
+            <h5 class="card-heading">Deluxe Room</h5>
+            <p class="card-text paragrap-text">Spacious and luxurious room with a beautiful view, king-size bed, and
+              modern amenities.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item paragrap-text">King-size Bed</li>
+              <li class="list-group-item paragrap-text">En-suite Bathroom</li>
+              <li class="list-group-item paragrap-text">High-speed Wi-Fi</li>
+              <li class="list-group-item paragrap-text">Complimentary Breakfast</li>
+            </ul>
+            <a href="#" class="btn btn-color mt-3">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Room Card 4 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 hidden-card" data-aos="zoom-in-right">
+        <div class="card room-card">
+          <img src="assets/images/ImgRoom4.jpg" class="card-img-top" alt="Room Image">
+          <div class="card-body">
+            <h5 class="card-heading">Deluxe Room</h5>
+            <p class="card-text paragrap-text">Spacious and luxurious room with a beautiful view, king-size bed, and
+              modern amenities.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item paragrap-text">King-size Bed</li>
+              <li class="list-group-item paragrap-text">En-suite Bathroom</li>
+              <li class="list-group-item paragrap-text">High-speed Wi-Fi</li>
+              <li class="list-group-item paragrap-text">Complimentary Breakfast</li>
+            </ul>
+            <a href="#" class="btn btn-color mt-3">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Room Card 5 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 hidden-card" data-aos="zoom-in-right">
+        <div class="card room-card">
+          <img src="assets/images/ImgRoom5.jpg" class="card-img-top" alt="Room Image">
+          <div class="card-body">
+            <h5 class="card-heading">Deluxe Room</h5>
+            <p class="card-text paragrap-text">Spacious and luxurious room with a beautiful view, king-size bed, and
+              modern amenities.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item paragrap-text">King-size Bed</li>
+              <li class="list-group-item paragrap-text">En-suite Bathroom</li>
+              <li class="list-group-item paragrap-text">High-speed Wi-Fi</li>
+              <li class="list-group-item paragrap-text">Complimentary Breakfast</li>
+            </ul>
+            <a href="#" class="btn btn-color mt-3">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Room Card 6 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 hidden-card" data-aos="zoom-in-right">
+        <div class="card room-card">
+          <img src="assets/images/ImgRoom6.jpg" class="card-img-top" alt="Room Image">
+          <div class="card-body">
+            <h5 class="card-heading">Deluxe Room</h5>
+            <p class="card-text paragrap-text">Spacious and luxurious room with a beautiful view, king-size bed, and
+              modern amenities.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item paragrap-text">King-size Bed</li>
+              <li class="list-group-item paragrap-text">En-suite Bathroom</li>
+              <li class="list-group-item paragrap-text">High-speed Wi-Fi</li>
+              <li class="list-group-item paragrap-text">Complimentary Breakfast</li>
+            </ul>
+            <a href="#" class="btn btn-color mt-3">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Show More / Less Buttons -->
+    <div class="text-center my-4">
+      <button id="btn-show-more" class="btn btn-color">Show More</button>
+      <button id="btn-show-less" class="btn btn-color" style="display: none;">Show Less</button>
+    </div>
+  </div>
+  <!-- ========================= End Rooms card content write html code ================  -->
+
+
+
+
+  <!-- ================== start image gallery slider ====================== -->
+
+  <div class="container col-ms-12 col-md-12 my-4" data-aos="zoom-out">
+    <div class="text-center mb-4 mt-5">
+      <h1 class="heading-style">Images</h1>
+    </div>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/d1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/dish1.gif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/ImgRoom1" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- ================== end image gallery slider ====================== -->
+
+
+
+
+
+
+
+
+
+
+  <!-- =================== start video section ===================== -->
+
+  <div class="container mt-5" data-aos="zoom-in-left">
+    <div class="text-center ">
+      <h1 class="heading-style mb-3">Videos</h1>
+    </div>
+    <!-- First row of videos -->
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Second row of videos -->
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Add more rows as needed -->
+  </div>
+  <!-- ==================== end video section ===================== -->
+
+
+
+
+
+
+
+
+
+
+  <!-- ================== start our features section ========================== -->
+  <div class="container-fluid bg-image py-5">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Our Features</h2>
+    </div>
+    <div class="features-container container ">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-truck fas-icons"></i>
+        </div>
+        <h5 class="feature-title">Home Delivery</h5>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-bed fas-icons"></i>
+        </div>
+        <h5 class="feature-title">Eco-Deluxe Rooms</h5>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-utensils fas-icons"></i>
+        </div>
+        <h5 class="feature-title">Healthy And Tasty Food</h5>
+      </div>
+    </div>
+  </div>
+  <!-- ================== end our features section ========================== -->
+
+
+
+
+
+
+
+
+  <!-- =================== start contact section ====================== -->
+  <div class="container my-5" data-aos="fade-up">
+    <div class="row g-4">
+      <!-- Left Side Design Content -->
+      <div class="col-md-5">
+        <div class="p-4 bg-light border rounded-3">
+          <h2 class="heading-style">Get in touch</h2>
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61554149143059&tabs=timeline&width=400&height=370&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="400" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
+      <!-- Right Side Form -->
+      <div class="col-md-7">
+        <div class="p-4 bg-white border rounded-3 shadow-sm">
+          <form>
+            <h2 class="heading-style">Contact Us</h2>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Enter your mobile number" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Enter your address" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-color w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- =================== end contact section ====================== -->
+
+
+
+
+
+
+
+
+  <!-- ============== start footer section ================ -->
+  <footer class="bg-image-footer text-white py-4 ">
+    <div class="container footer-content">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase mb-4">AK Restaurant</h5>
+          <p>A place where taste meets elegance.</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-text paragrap-text">Home</a></li>
+            <li><a href="#" class="footer-text paragrap-text">About Us</a></li>
+            <li><a href="#" class="footer-text paragrap-text">Rooms</a></li>
+            <li><a href="#" class="footer-text paragrap-text">Menu</a></li>
+            <li><a href="#" class="footer-text paragrap-text">Gallery</a></li>
+            <li><a href="#" class="footer-text paragrap-text">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase mb-4">Opening Hours</h5>
+          <p class=" paragrap-text">Friday: 9AM - 10PM</p>
+          <p class="paragrap-text">Saturday: 10AM - 11PM</p>
+          <p class="paragrap-text">Sunday: 10AM - 11PM</p>
+          <p class="paragrap-text">Monday: 10AM - 11PM</p>
+          <p class="paragrap-text">Tuesday: 10AM - 11PM</p>
+          <p class="paragrap-text">Wednesday: 10AM - 11PM</p>
+          <p class="paragrap-text">Thursday: 10AM - 11PM</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="text-uppercase mb-4">Connect With Us</h5>
+          <p>Follow us on social media:</p>
+          <div class="social-icons">
+            <a href="#" class="text-white me-2"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-2"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="text-white me-2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-white border-color text-center">
+      <p>&copy; 2024 AK Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- ============== end footer section ================ -->
+
+
+
+
+
+
+  <!--=========== start Scroll to Top Button ========== -->
+  <button id="scrollToTopBtn" title="Go to top"><i class="fa-solid fa-chevron-up scroll-top"></i></button>
+  <!--=========== end Scroll to Top Button ========== -->
+
+
+
+
+
+
+
+
+  <!-- ====================== start see menu and order button code ======================== -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-md modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title heading-style" id="exampleModalLabel">Our Menus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="menu-card">
+            <img src="assets/images/ImgRoom2.jpg" class="menu-order-img" alt="Dish Image">
+            <div class="menu-info">
+              <h5 class="card-heading fs-5">Delicious Dish</h5>
+              <div class="rating">
+                ★★★★☆
+              </div>
+            </div>
+            <div class="menu-price">
+              <p class="order-price">Rs 150</p>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="assets/images/slide2.jpg" class="menu-order-img" alt="Dish Image">
+            <div class="menu-info">
+              <h5 class="card-heading fs-5">Delicious Dish</h5>
+              <div class="rating">
+                ★★★★☆
+              </div>
+            </div>
+            <div class="menu-price">
+              <p class="order-price">Rs 150</p>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="assets/images/slide1.jpg" class="menu-order-img" alt="Dish Image">
+            <div class="menu-info">
+              <h5 class="card-heading fs-5">Delicious Dish</h5>
+              <div class="rating">
+                ★★★★☆
+              </div>
+            </div>
+            <div class="menu-price">
+              <p class="order-price">Rs 150</p>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+
+
+          <div class="menu-card">
+            <img src="assets/images/slide1.jpg" class="menu-order-img" alt="Dish Image">
+            <div class="menu-info">
+              <h5 class="card-heading fs-5">Delicious Dish</h5>
+              <div class="rating">
+                ★★★★☆
+              </div>
+            </div>
+            <div class="menu-price">
+              <p class="order-price">Rs 150</p>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="assets/images/slide1.jpg" class="menu-order-img" alt="Dish Image">
+            <div class="menu-info">
+              <h5 class="card-heading fs-5">Delicious Dish</h5>
+              <div class="rating">
+                ★★★★☆
+              </div>
+            </div>
+            <div class="menu-price">
+              <p class="order-price">Rs 150</p>
+              <a href="#" class="btn btn-color">Order Now</a>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="assets/images/slide1.jpg" class="menu-order-img" alt="Dish Image">
+            <div class="menu-info">
+              <h5 class="card-heading fs-5">Delicious Dish</h5>
+              <div class="rating">
+                ★★★★☆
+              </div>
+            </div>
+            <div class="menu-price">
+              <p class="order-price">Rs 150</p>
+              <a href="#" class="btn btn-font-size btn-color">Order Now</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-color" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ====================== end see menu and order button code ======================== -->
+
+
+
+
+
+
+
+
+
+<!-- ========================== start table reserved section =========================== -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title heading-style" id="exampleModalLabel">Table Reservation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="reservation-form">
+            <div class="form-group mb-2">
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group mb-2">
+              <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group mb-2">
+              <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
+            </div>
+            <div class="form-group mb-2">
+              <input type="text" class="form-control" id="nepali-datepicker" placeholder="Select Nepali Date" required/>
+            </div>
+            <div class="form-group mb-2">
+              <input type="time" class="form-control" id="time" placeholder="Enter time" required>
+            </div>
+            <div class="form-group mb-2">
+              <input type="number" class="form-control" id="people" placeholder="Enter Number of people" required>
+            </div>
+            <div class="form-group mb-2">
+              <select class="form-control" id="people" required>
+                <option value="">Select Number of Tables</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            <div class="form-group mb-2">
+              <textarea class="form-control" id="specialRequests" rows="3"
+                placeholder="Any special requests"></textarea>
+            </div>
+            <button type="submit" class="btn btn-color btn-block">Submit Reservation</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-color" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ========================== start table reserved section =========================== -->
+
+
+
+
+
+
+
+
+<!-- ========================== start login reserved section =========================== -->
+
+<button type="button" class="btn btn-res-table me-2" data-bs-toggle="modal" data-bs-target="#exampleModal3"
+data-bs-whatever="@getbootstrap">akhil</button>
+
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title heading-style" id="exampleModalLabel">Table Reservation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+<div class="wrapper">
+  <div class="title">
+     Login Form
+  </div>
+  <!-- Login form -->
+  <form action="#">
+     <div class="field">
+        <input type="text" required>
+        <label>Email Address</label>
+     </div>
+     <div class="field">
+        <input type="password" required>
+        <label>Password</label>
+     </div>
+     <div class="content">
+        <div class="checkbox">
+           <input type="checkbox" id="remember-me">
+           <label for="remember-me">Remember me</label>
+        </div>
+        <div class="pass-link">
+           <a href="#" onclick="toggleForm('forgot')">Forgot password?</a>
+        </div>
+     </div>
+     <div class="field">
+        <input type="submit" value="Login">
+     </div>
+     <div class="signup-link">
+        Not a member? <a href="#" onclick="toggleForm('signup')">Signup now</a>
+     </div>
+  </form>
+  <!-- Sign up form -->
+  <form action="#" class="signup-form">
+     <div class="field">
+        <input type="text" required>
+        <label>Full Name</label>
+     </div>
+     <div class="field">
+        <input type="text" required>
+        <label>Email Address</label>
+     </div>
+     <div class="field">
+        <input type="password" required>
+        <label>Password</label>
+     </div>
+     <div class="field">
+        <input type="submit" value="Sign Up">
+     </div>
+  </form>
+  <!-- Forgot password form -->
+  <form action="#" class="forgot-form">
+     <div class="field">
+        <input type="text" required>
+        <label>Email Address</label>
+     </div>
+     <div class="field">
+        <input type="submit" value="Reset Password">
+     </div>
+  </form>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-color" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================== start table reserved section =========================== -->
+
+
+
+
+
+
+
+
+<!-- ================== start nepali date picker link =================== -->
+<script src="https://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/js/nepali.datepicker.v4.0.4.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  window.onload = function() {
+      var mainInput = document.getElementById("nepali-datepicker");
+      mainInput.nepaliDatePicker();
+  };
+</script>
+<!-- ================== end nepali date picker link =================== -->
+
+
+  <!-- ============ start javascript aos link ===================== -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000,
+    });
+  </script>
+  <!-- ============ end javascript aos link ===================== -->
+
+
+
+
+  <!-- bootstrap js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap js link -->
+
+
+  <!-- Start main js link  -->
+  <link rel="stylesheet" href="assets/javascript/main.js" class="js">
+  <!-- End main js link  -->
+
+
+  <!-- ============ start javascript reference link ============= -->
+  <script src="assets/javascript/main.js"></script>
+  <!-- ============ End javascript reference link ============= -->
+
+
+
+</body>
+
+</html>
